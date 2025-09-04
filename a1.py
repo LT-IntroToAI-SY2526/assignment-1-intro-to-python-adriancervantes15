@@ -1,5 +1,5 @@
 # Assignment 1: AI-Generated Python Problems
-# Name: [Your Name Here]
+# Name: Adrian Cervantes Lopez
 
 """
 AI-Generated Problem Set
@@ -20,7 +20,16 @@ Remember: The goal is to LEARN, not just get working code!
 
 """
 MY ORIGINAL AI PROMPT:
-[Paste the prompt you used to generate your problem set here]
+[Copy the AI-generated problems into your `a1.py` file. Include the original prompt you used and the problems the AI created.
+I'm learning Python basics in a high school programming class. I have some experience with java. Can you create 5-7 practice problems that cover: 
+> - Variables and basic data types
+> - Conditionals (if/elif/else)
+> - Loops (for and while)
+> - Functions
+> - Basic list operations
+ 
+> Make them progressively more challenging. Make sure each problem has clear instructions and example inputs/outputs.
+---]
 
 Example: "I'm learning Python basics in a high school programming class. 
 I have some experience with Java. Can you create 5-7 practice problems that cover..."
@@ -31,28 +40,112 @@ I have some experience with Java. Can you create 5-7 practice problems that cove
 # =============================================================================
 
 """
-PROBLEM 1: [Problem Title/Description]
-[Copy the complete problem description from your AI assistant]
+Problem 1: Favorite Number (Variables & Data Types)
+
+Difficulty: 🟢 Beginner
+Concepts: Variables, strings, integers, input/output
+
+Instructions:
+Write a program that asks the user for their name and favorite number. Then, print a message using both.
 
 Example:
-Problem: Write a function called 'is_even' that takes an integer and returns 
-True if the number is even, False if it's odd.
 
-Example inputs/outputs:
-- is_even(4) should return True
-- is_even(7) should return False
+Input:
+Enter your name: Alex
+Enter your favorite number: 7
+
+Output:
+Hi Alex! Your favorite number is 7.
+
+✅ Problem 2: Odd or Even? (Conditionals)
+
+Difficulty: 🟢 Beginner
+Concepts: Conditionals, modulus operator
+
+Instructions:
+Write a program that asks the user for a number and tells them whether it is odd or even.
+
+Example:
+
+Input:
+Enter a number: 14
+
+Output:
+14 is even.
+
+Input:
+Enter a number: 5
+
+Output:
+5 is odd.
+
+✅ Problem 3: Countdown Timer (Loops: while)
+
+Difficulty: 🟡 Easy-Medium
+Concepts: while loops
+
+Instructions:
+Write a program that takes a number from the user and counts down to 0, printing each number.
+
+Example:
+
+Input:
+Enter a number to start countdown: 5
+
+Output:
+5
+4
+3
+2
+1
+0
+
+✅ Problem 4: Sum of Numbers (Loops: for)
+
+Difficulty: 🟡 Easy-Medium
+Concepts: for loops, range, summation
+
+Instructions:
+Write a program that asks for a number n and prints the sum of all numbers from 1 to n.
+
+Example:
+
+Input:
+Enter a number: 5
+
+Output:
+The sum from 1 to 5 is 15.
+
+✅ Problem 5: Grade Checker (Functions + Conditionals)
+
+Difficulty: 🟡 Medium
+Concepts: Functions, conditionals, return values
+
+Instructions:
+Write a function get_letter_grade(score) that returns a letter grade based on the numeric score:
+
+90+ → A
+
+80–89 → B
+
+70–79 → C
+
+60–69 → D
+
+<60 → F
+
+Ask the user for a score, call the function, and print the result.
+
+Example:
+
+Input:
+Enter your test score: 83
+
+Output:
+Your grade is: B
+
+
 """
-
-
-
-
-
-
-
-
-
-
-
 # =============================================================================
 # PART 3: TESTING YOUR SOLUTIONS
 # =============================================================================
