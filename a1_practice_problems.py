@@ -28,7 +28,7 @@ def absolute(n: int) -> int:
         the absolute value of the passed in number
     """
     if n < 0:
-        n * -1
+        return n * -1
     return n
 
 
@@ -42,12 +42,11 @@ def factorial(n: int) -> int:
     Returns:
         factorial of the passed in number
     """
-    sum = 0
-    for i in range(n):
-        sum += n
-        n -= 1
+    fact = 1
+    for i in range(1, n + 1):
+        fact *= i
     
-    return sum
+    return fact
 
 
 T = TypeVar("T")
@@ -85,7 +84,13 @@ def sum_list(lst: List[int]) -> int:
     Returns:
         the sum of the passed in list
     """
-    raise NotImplementedError("sum_list")
+    sum = 0
+    for i in range(len(lst)):
+        curr = lst[i]
+        sum += curr
+    
+    return sum
+
 
 
 def mean(lst: List[int]) -> float:
@@ -97,7 +102,16 @@ def mean(lst: List[int]) -> float:
     Returns:
         the mean of the passed in list
     """
-    raise NotImplementedError("mean")
+    amtNum = len(lst)
+    sum = 0
+    for i in range(amtNum):
+        curr = lst[i]
+        sum += curr
+    
+    mean = sum / amtNum
+    return mean
+
+
 
 
 def median(lst: List[int]) -> float:
@@ -112,7 +126,15 @@ def median(lst: List[int]) -> float:
     Returns:
         the median of the passed in list
     """
-    raise NotImplementedError("median")
+    if len(lst) % 2 == 1:
+        return lst[(len(lst) // 2)]
+    
+    idxMidR = len(lst) // 2
+    idxMidL = idxMidR - 1
+    return (lst[idxMidR] + lst[idxMidL]) / 2
+
+    
+
 
 
 def duck_duck_goose(lst: List[str]) -> List[str]:
