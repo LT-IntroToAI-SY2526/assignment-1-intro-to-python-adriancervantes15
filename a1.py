@@ -57,6 +57,11 @@ Enter your favorite number: 7
 Output:
 Hi Alex! Your favorite number is 7.
 
+user_Name = input("Enter your name:")
+user_favNum = input("Enter your favorite number:")
+print("Hi " + user_Name + "! Your favorite number is " + user_favNum + ".")
+
+
 ✅ Problem 2: Odd or Even? (Conditionals)
 
 Difficulty: 🟢 Beginner
@@ -79,6 +84,12 @@ Enter a number: 5
 Output:
 5 is odd.
 
+user_Num = input("Enter a number: ")
+if user_Num % 2 == 1:
+    print(user_Num + "is odd.")
+else:
+    print(user_Num + "is even.")
+
 ✅ Problem 3: Countdown Timer (Loops: while)
 
 Difficulty: 🟡 Easy-Medium
@@ -99,6 +110,9 @@ Output:
 2
 1
 0
+
+user_Num = input("Enter a number to start countdown: )
+
 
 ✅ Problem 4: Sum of Numbers (Loops: for)
 
