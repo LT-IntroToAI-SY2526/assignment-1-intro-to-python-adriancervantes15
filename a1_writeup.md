@@ -17,9 +17,10 @@ Mr. Berg will look at all your files to determine what you have completed.  If t
 After completing your problems, reflect on:
 
 1. **What was your initial experience with Python?** How did it compare to other programming languages you've used?
-
+    My initial experience with Python was pretty good. I took a python class sophmore year, so I am familar with it.
 2. **How did you use AI effectively?** Give specific examples of good prompts you used and what you learned from the responses.
-
+    I used AI effectively by asking it to highlight any mistakes in my code. That way I could know what I needed to fix. Also, because sometimes I make mistakes and don't notice them even when I go over my code several times.
 3. **What concepts were most challenging?** How did AI help you understand them?
-
+    One problem that I found challenging was the duck duck goose problem. That one was more challenging as it was more of a logical problem. 
 4. **What did you learn about collaborating with AI?** What strategies worked best for learning rather than just getting answers?
+    One thing I learned about collaboraing with AI was that it speeds up the learning process because it is able to highlight mistakes that I make quicker than I can.
