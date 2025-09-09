@@ -84,11 +84,11 @@ Enter a number: 5
 Output:
 5 is odd.
 
-user_Num = input("Enter a number: ")
+user_Num = int(input("Enter a number: "))
 if user_Num % 2 == 1:
-    print(user_Num + "is odd.")
+    print(str(user_Num) + " is odd.")
 else:
-    print(user_Num + "is even.")
+    print(str(user_Num) + " is even.")
 
 ✅ Problem 3: Countdown Timer (Loops: while)
 
@@ -111,8 +111,10 @@ Output:
 1
 0
 
-user_Num = input("Enter a number to start countdown: )
-
+user_Num = int(input("Enter a number to start countdown: "))
+while user_Num >= 0:
+    print(user_Num)
+    user_Num -= 1
 
 ✅ Problem 4: Sum of Numbers (Loops: for)
 
@@ -129,6 +131,12 @@ Enter a number: 5
 
 Output:
 The sum from 1 to 5 is 15.
+
+user_Num = int(input("Enter a number: "))
+total = 0
+for i in range(1, user_Num + 1):
+    total += i
+print("The sum from 1 to " + str(user_Num) + " is " + str(total))
 
 ✅ Problem 5: Grade Checker (Functions + Conditionals)
 
@@ -157,6 +165,21 @@ Enter your test score: 83
 
 Output:
 Your grade is: B
+
+def get_letter_score(score):
+    if score >= 90:
+        return "Your grade is: A"
+    elif score >= 80:
+        return "Your grade is: B"
+    elif score >= 70:
+        return "Your grade is: C"
+    elif score >= 60:
+        return "Your grade is: D"
+    else:
+        return "Your grade is: F"
+
+user_Score = int(input("Enter your test score: "))
+print(get_letter_score(user_Score))
 
 
 """
