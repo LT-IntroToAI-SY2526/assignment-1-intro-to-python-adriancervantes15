@@ -56,12 +56,12 @@ Enter your favorite number: 7
 
 Output:
 Hi Alex! Your favorite number is 7.
-
-user_Name = input("Enter your name:")
-user_favNum = input("Enter your favorite number:")
+"""
+user_Name = input("Enter your name: ")
+user_favNum = input("Enter your favorite number: ")
 print("Hi " + user_Name + "! Your favorite number is " + user_favNum + ".")
 
-
+""""
 ✅ Problem 2: Odd or Even? (Conditionals)
 
 Difficulty: 🟢 Beginner
@@ -83,13 +83,14 @@ Enter a number: 5
 
 Output:
 5 is odd.
-
+"""
 user_Num = int(input("Enter a number: "))
 if user_Num % 2 == 1:
     print(str(user_Num) + " is odd.")
 else:
     print(str(user_Num) + " is even.")
 
+"""
 ✅ Problem 3: Countdown Timer (Loops: while)
 
 Difficulty: 🟡 Easy-Medium
@@ -110,12 +111,13 @@ Output:
 2
 1
 0
-
+"""
 user_Num = int(input("Enter a number to start countdown: "))
 while user_Num >= 0:
     print(user_Num)
     user_Num -= 1
 
+"""
 ✅ Problem 4: Sum of Numbers (Loops: for)
 
 Difficulty: 🟡 Easy-Medium
@@ -131,13 +133,14 @@ Enter a number: 5
 
 Output:
 The sum from 1 to 5 is 15.
-
+"""
 user_Num = int(input("Enter a number: "))
 total = 0
 for i in range(1, user_Num + 1):
     total += i
 print("The sum from 1 to " + str(user_Num) + " is " + str(total))
 
+"""
 ✅ Problem 5: Grade Checker (Functions + Conditionals)
 
 Difficulty: 🟡 Medium
@@ -165,7 +168,7 @@ Enter your test score: 83
 
 Output:
 Your grade is: B
-
+"""
 def get_letter_score(score):
     if score >= 90:
         return "Your grade is: A"
@@ -177,7 +180,7 @@ def get_letter_score(score):
         return "Your grade is: D"
     else:
         return "Your grade is: F"
-
+"""
 user_Score = int(input("Enter your test score: "))
 print(get_letter_score(user_Score))
 
@@ -213,5 +216,6 @@ print("\nTesting Problem 4:")
 
 print("\nTesting Problem 5:")
 # Add your tests here
+assert get_letter_score(83) == "Your grade is: B", "get_letter_score(83) failed"
 
 
